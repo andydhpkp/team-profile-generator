@@ -1,6 +1,6 @@
 const Employee = require('../lib/Employee')
 
-test('creates an Employee', () => {
+test('Creates an Employee', () => {
     const employee = new Employee('Andrew', '1', 'andrewdurham1094@gmail.com')
 
     expect(employee.name).toBe('Andrew')
@@ -8,25 +8,25 @@ test('creates an Employee', () => {
     expect(employee.email).toBe('andrewdurham1094@gmail.com')
 })
 
-test('returns name of Employee', () => {
+test('Returns name of Employee', () => {
     const employee = new Employee('Andrew', '1', 'andrewdurham1094@gmail.com')
 
     expect(employee.getName()).toBe('Andrew')
 })
 
-test('returns ID of Employee', () => {
+test('Returns ID of Employee', () => {
     const employee = new Employee('Andrew', '1', 'andrewdurham1094@gmail.com')
 
     expect(employee.getId()).toBe('1')
 })
 
-test('returns email of Employee', () => {
+test('Returns email of Employee', () => {
     const employee = new Employee('Andrew', '1', 'andrewdurham1094@gmail.com')
 
     expect(employee.getEmail()).toBe('andrewdurham1094@gmail.com')
 })
 
-test('returns role of Employee', () => {
+test('Returns role of Employee', () => {
     const employee = new Employee('Andrew', '1', 'andrewdurham1094@gmail.com')
 
     expect(employee.getRole()).toBe('Employee')
